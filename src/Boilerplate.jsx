@@ -22,6 +22,8 @@ export default class Boilerplate extends Component {
 		this.decreaseCount = this.decreaseCount.bind(this);
 		this.randomlySetCount = this.randomlySetCount.bind(this);
 		this.saveCount = this.saveCount.bind(this);
+
+		console.log('hi there friend');
 	}
 
 	componentDidMount () {
