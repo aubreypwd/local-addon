@@ -24,7 +24,8 @@
     "build": "tsc",
     "prepare": "tsc",
     "watch": "yarn run build --watch",
-    "dist": "npx npm-pack-all --output dist/"
+    "dist": "npx npm-pack-all --output dist/",
+    "link": "sh npm/scripts/link.sh"
   },
   "devDependencies": {
     "@getflywheel/eslint-config-local": "1.0.4",
