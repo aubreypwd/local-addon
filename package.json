@@ -1,7 +1,7 @@
 {
   "name": "local-addon",
   "productName": "Show Current Theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "WebDevStudios",
   "keywords": [
     "local-addon"
