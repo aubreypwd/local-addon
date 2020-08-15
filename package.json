@@ -1,13 +1,13 @@
 {
   "name": "local-addon",
-  "productName": "local-addon",
+  "productName": "Show Current Theme",
   "version": "1.0.0",
   "author": "WebDevStudios",
   "keywords": [
     "local-addon"
   ],
-  "bgColor": "#51bb7b",
-  "icon": "icon.svg",
+  "bgColor": "#ffffff",
+  "icon": "icon.png",
   "slug": "local-addon",
   "description": "A cool addon to learn how to make addons for Local.",
   "renderer": "lib/renderer.js",
@@ -47,6 +47,7 @@
     "classnames": "^2.2.6",
     "dateformat": "^3.0.3",
     "fs-extra": "^9.0.1",
+    "mysql": "~2.18.1",
     "prop-types": "^15.6.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
