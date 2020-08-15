@@ -27,6 +27,16 @@ export default class CurrentActiveTheme extends Component {
 		connection.connect();
 
 		connection.query("SELECT option_value FROM wp_options WHERE option_name = 'stylesheet'", (error, results, fields) => {
+			if (error) {
+				this.setState(function (state, props) {
+					return {
+						theme: this.state.theme,
+					};
+				});
+
+				return;
+			}
+
 			this.setState(function (state, props) {
 				return {
 					theme: results[0].option_value ?? this.state.theme,
@@ -38,7 +48,7 @@ export default class CurrentActiveTheme extends Component {
 	}
 
 	componentDidMount () {
-		this.getActiveTheme();
+		setInterval(this.getActiveTheme.bind(this), 500);
 	}
 
 	componentWillUnmount () {
